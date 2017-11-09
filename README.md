@@ -199,7 +199,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-           <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -216,7 +216,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-            <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -233,7 +233,6 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-      
       <td>0.0</td>
       <td>0.158427</td>
       <td>0.0</td>
@@ -251,7 +250,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.4717</td>
       <td>0.0</td>
       <td>...</td>
-            <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -268,7 +267,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-          <td>0.0</td>
+      <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -282,8 +281,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>
-     
+      <th></th>  
       <th>col0</th>
       <th>col1</th>
       <th>col2</th>
@@ -292,8 +290,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <th>col5</th>
       <th>col6</th>
       <th>col7</th>
-      <th>...</th>
-      
+      <th>...</th>     
       <th>col495</th>
       <th>col496</th>
       <th>col497</th>
@@ -303,8 +300,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      
+      <th>0</th>      
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -314,7 +310,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>...</td>
-            <td>0</td>
+      <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -322,7 +318,6 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
     </tr>
     <tr>
       <th>1</th>
-     
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -331,8 +326,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>...</td>
-      
+      <td>...</td>      
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -340,8 +334,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
     </tr>
     <tr>
-      <th>2</th>
-     
+      <th>2</th>    
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -351,15 +344,14 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>...</td>
-            <td>0</td>
+      <td>0</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
-      <th>3</th>
-      
+      <th>3</th>      
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -376,8 +368,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
     </tr>
     <tr>
-      <th>4</th>
-      
+      <th>4</th>      
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -387,7 +378,6 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>...</td>
- 
       <td>0</td>
       <td>0</td>
       <td>0</td>
