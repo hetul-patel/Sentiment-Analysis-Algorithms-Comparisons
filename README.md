@@ -71,7 +71,7 @@ Random Forest Classifier works like a question & answer mechanism where every qu
 
 In random forest, we can combine decisions of many such weak learners to get a majority vote. For e.g if more than 50% trees says that the review is good than we can go with it.
 
-###Getting started in python.
+### Getting started in python.
 
 Here we will use **RandomForestClassifier** from **sklearn.ensemble** package. We need to clean our data in order to increase the acuracy. This step is called **Tokenisation**. Here **KaggleWord2VecUtility** provides the tokenisation function which removes the stop word and build a word vector from string having cleaner words. To count the frequency of each word in our dataset we will use **CountVectorizer** package.
 
@@ -165,7 +165,7 @@ To implement Naivye Bayse Classifier, we will represent the review in feature ve
 
 We can represent the review in simple **Word Count Vector Form** and also in **Weighted Vector From** form also known as the **Tf-Idf** or **Normalised Vector Representation**. Normalised vector are more reliable in the case where some words are very rare in vocabulary but which are also very important in deciding the class label. 
 
-###Word Count Vector Representation
+### Word Count Vector Representation
 
 <table border="1" class="dataframe">
   <thead>
@@ -397,7 +397,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
   </tbody>
 </table>
 
-###Getting started in python.
+### Getting started in python.
 
 Here we will be using **GaussianNB** package of **sklearn.naive_bayes** for training the model and try to predict the class labels of unknown reviews. **LabelEncoder** is helpful in encoding the class labels to numeric value starting from **0** to **n_classes-1**. 
 
