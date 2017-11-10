@@ -3,7 +3,7 @@
 
 Sentiment analysis is a challenging subject in machine learning. People express their emotions in language that is often obscured by sarcasm, ambiguity, and plays on words, all of which could be very misleading for both humans and computers
 
-This tutorial is designed to give you a comparative analysis of different sentiment analysis algorithms in the increasing order of acuracy.
+This tutorial is designed to give you a comparative analysis of different sentiment analysis algorithms in the increasing order of accuracy.
 
 ### Dataset Description
 
@@ -64,10 +64,9 @@ This dataset is collected from Hotel Booking Website. Each row has a hotel revie
   </tbody>
 </table>
 
-## 1. Basic Natural Language Processing using Random Forest Classifier  [ Accuracy : 0.65293 ]
+## 1. Basic Natural Language Processing using Random Forest Classifier
 
-
-Random Forest Classifier works like a question & answer mechanism where every question has a binary answer. For e.g If a word 'Sad' is present in the review or not. A tree consisting of many questions like this yields to a decision like 'Good Review' or 'Bad Review'. Here each tree is a weak learner as it has only  set of questio. 
+Random Forest Classifier works like a question & answer mechanism where every question has a binary answer. For e.g If a word 'Sad' is present in the review or not. A tree consisting of many questions like this yields to a decision like 'Good Review' or 'Bad Review'. Here each tree is a weak learner as it has only  set of question. 
 
 In random forest, we can combine decisions of many such weak learners to get a majority vote. For e.g if more than 50% trees says that the review is good than we can go with it.
 
@@ -157,7 +156,9 @@ output.to_csv('first_sub.csv', index=False, quoting=3, header=True, columns=['Us
 
 ```
 
-## 2. Gaussian Naive Bayse  [ Accuracy : 0.85 ]
+
+
+## 2. Naive Bayse
 
 Most of you have already studied the applications of Naive Bayse theorem  in Machine Learning for classification problem. Here we try to predict the probability of given review to be classified in each of the target_classes and assigned the label having heighest probability.
 
@@ -199,7 +200,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.0</td>
+           <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -216,7 +217,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.0</td>
+            <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -232,7 +233,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0</td>
       <td>0.0000</td>
       <td>0.0</td>
-      <td>...</td>
+      <td>...</td>    
       <td>0.0</td>
       <td>0.158427</td>
       <td>0.0</td>
@@ -250,7 +251,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.4717</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.0</td>
+            <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -267,7 +268,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0.0000</td>
       <td>0.0</td>
       <td>...</td>
-      <td>0.0</td>
+          <td>0.0</td>
       <td>0.000000</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -281,7 +282,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
-      <th></th>  
+      <th></th>    
       <th>col0</th>
       <th>col1</th>
       <th>col2</th>
@@ -290,7 +291,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <th>col5</th>
       <th>col6</th>
       <th>col7</th>
-      <th>...</th>     
+      <th>...</th>   
       <th>col495</th>
       <th>col496</th>
       <th>col497</th>
@@ -310,7 +311,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+            <td>0</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -326,7 +327,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>...</td>      
+      <td>...</td>   
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -334,7 +335,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
     </tr>
     <tr>
-      <th>2</th>    
+      <th>2</th     
       <td>0</td>
       <td>0</td>
       <td>0</td>
@@ -344,7 +345,7 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>0</td>
+            <td>0</td>
       <td>1</td>
       <td>0</td>
       <td>0</td>
@@ -389,11 +390,13 @@ We can represent the review in simple **Word Count Vector Form** and also in **W
 
 ### Getting started in python.
 
-Here we will be using **GaussianNB** package of **sklearn.naive_bayes** for training the model and try to predict the class labels of unknown reviews. **LabelEncoder** is helpful in encoding the class labels to numeric value starting from **0** to **n_classes-1**. 
+Here we will be using **GaussianNB** and **BernoulliNB** package of **sklearn.naive_bayes** for training the model and try to predict the class labels of unknown reviews. **LabelEncoder** is helpful in encoding the class labels to numeric value starting from **0** to **n_classes-1**. 
+
 
 ```
 import numpy as np
 import pandas as pd
+from sklearn.naive_bayes import BernoulliNB
 from sklearn.naive_bayes import GaussianNB
 from sklearn.preprocessing import LabelEncoder
 import re
@@ -438,7 +441,7 @@ alldata['Description'] = alldata['Description'].map(lambda x: cleanData(x))
 Now initialise the functions - we'll create separate models for each type.
 
 * **analyzer** : Whether the feature should be made of a word or character n-grams.
-* **ngram_range** : The lower ans upper boundry of the range of n-values for different n-grams to be extracted.
+* **ngram_range** : The lower and upper boundry of the range of n-values for different n-grams to be extracted.
 * **min_df** : Maximum document frequency for given term to be selected as feature. Mostly stop words have df more than **min_df** are ignored here.
 * **max_features** : Maximum length of the feature vector to restrict training time.
 
@@ -533,3 +536,110 @@ sub1.to_csv('submissions/sub1_cv.csv', index=False)
 sub2.to_csv('submissions/sub2_tf.csv', index=False)
 
 ```    
+
+## 3. Light GBM ( Gradient Boosting Model by Microsoft )
+
+### **What is boosting ?**
+
+Boosting makes weak learners strong. Weak learners are iteratively tested for missclassified instances and will be added for upcoming training rounds, so that model can learn them well. Thus, future weak learners focus more on the examples that previous weak learners misclassified.
+
+### **What is LightGBM ?**
+
+Light GBM is a fast, distributed, high-performance gradient boosting framework based on decision tree algorithm. It splits the tree leaf wise with the best fit whereas other boosting algorithms split the tree depth wise or level wise rather than leaf-wise. So when growing on the same leaf in Light GBM, the leaf-wise algorithm can reduce more loss than the level-wise algorithm.
+
+
+### Getting started in python.
+We will be using the bag of words training set used in previous algorithms which is `train_feats1` since lightgbm accepts this kind of format.
+
+```
+import lightgbm as lgb
+
+d_train = lgb.Dataset(train_feats1, label = target)
+```
+
+### Parameter tuning
+
+* **task** : can be `train` or `prediction`
+* **boosting_type** : `gbdt`, traditional Gradient Boosting Decision Tree. `rf`, Random Forest. `dart`, Dropouts meet Multiple Additive Regression Trees
+`goss`, Gradient-based One-Side Sampling 
+* **objective** : here `binary` for binary classification
+* **metric** : `binary_error`, For any sample it is 0 for correct classification and 1 for error classification.
+* **max_depth** : Limit the max depth for tree model. This is used to deal with over-fitting when #data is small. Tree still grows by leaf-wise.
+* **num_leaves** : Number of leaves in one tree
+* **feature_fraction** :  If set to 0.8, will select 80% features before training each tree.
+* **bagging_fraction** : Like feature_fraction, but this will randomly select part of data without resampling.
+* **bagging_freq** : Frequency for bagging, 0 means disable bagging. k means will perform bagging at every k iteration
+* **stratified** : It means balance the instances from both the classes.
+* **verbose_eval** : Prints the progress at **k** interval.
+* **early stopping rounds** : Stop if no significant change in error after **k** rounds.
+
+**CV()** returns **eval_hist** – Evaluation history. The dictionary has the following format: {‘metric1-mean’: [values], ‘metric1-stdv’: [values], ‘metric2-mean’: [values], ‘metric1-stdv’: [values], ...}.
+
+```
+params = {'task': 'train',
+    'boosting_type': 'gbdt',
+    'objective': 'binary', 
+    'metric': 'binary_error', 
+    'learning_rate': 0.05, 
+    'max_depth': 7, 
+    'num_leaves': 21, 
+    'feature_fraction': 0.3, 
+    'bagging_fraction': 0.8, 
+    'bagging_freq': 5}   
+    
+lgb_cv = lgb.cv(params, d_train, num_boost_round=500, nfold= 5, shuffle=True, stratified=True, verbose_eval=20, early_stopping_rounds=40)    
+
+```
+Once the cross validation is done we will choose the one which is having lowest error and make predictions.
+
+```
+nround = lgb_cv['binary_error-mean'].index(np.min(lgb_cv['binary_error-mean']))
+
+model = lgb.train(params, d_train, num_boost_round=nround)
+
+preds = model.predict(test_feats1)
+```
+You can change cutoff value **x** (here 0.66) and see if accuracy improves or plot AUC curve. 
+
+
+```
+def to_labels(x):
+    if x > 0.054001:         
+    	return "happy"
+	 else:
+    	return "not_happy"
+
+sub3 = pd.DataFrame({'User_ID':test.User_ID, 'Is_Response':preds})
+sub3['Is_Response'] = sub3['Is_Response'].map(lambda x: to_labels(x))
+sub3 = sub3[['User_ID','Is_Response']]
+sub3.to_csv('sub3_lgb.csv', index=False)
+
+```
+We can run same example with **Tf-idf** and check the accuracy.
+
+# Accuracy comparision
+
+### Accuracy = ( TP + TN ) / ( P + N )
+
+* Random Forest:							**0.65293**
+* Naive Bayse (BOW):						**0.77327**
+* Naive Bayse (Tf-idf):					**0.81058**
+* Gradient Boosting (BOW ):				**0.87306**
+* Gradient Boosting (Tf-idf ):			**0.87539**
+
+
+![MacDown Screenshot](http://iste-itnu.com/homey/1.png)
+
+# Conclusion
+
+The main limitation of the **Random Forests** algorithm is that a large number of trees may make the algorithm slow for real-time prediction. Random forest can not see the leaves at untravelled nodes which makes is somewhat biased. 
+
+Naive bayes in comparision is fast and gives good accuracy. Using tf-idf weighting scheme over simple bag of words models can give higher accurcy. 
+
+The fastest and most useful algorithm for competitions is Gradient Bossting. Gradient boosting has almost highest accuracy over other algorithms. 
+
+The accuracy depends upon the parameters used for for training. So we can check the accuracy by experimenting with the parameters. 
+
+In future you can also use word embeddings and develope your Neural Network for classification problem. 
+
+
